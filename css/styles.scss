@@ -12,7 +12,7 @@ $shooting-time: 3000ms;
 }
 html,
 body {
-    overscroll-behavior-y: none;
+    overscroll-behavior-y: contain;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
@@ -553,6 +553,9 @@ header.header-colored{
   }
   .navbar-brand{
     font-size: 2em !important;
+  }
+  #landing-section{
+    background-image: url(../imgs/bg/stars.jpg);
   }
 }
 

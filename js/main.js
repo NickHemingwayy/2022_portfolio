@@ -52,6 +52,7 @@ $(document).ready(function() {
       }else{
         $('header').removeClass('header-colored');
       }
+      
 
 
       $('.landing-content').css('opacity',scale(scroll, 0, 600, 1, 0));
