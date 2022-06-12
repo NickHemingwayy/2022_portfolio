@@ -55,7 +55,8 @@ $(document).ready(function() {
       
 
 
-      $('.landing-content').css('opacity',scale(scroll, 0, 600, 1, 0));
+      //$('.landing-content').css('opacity',scale(scroll, 0, 600, 1, 0) );
+      $('.landing-content').css('filter','brightness('+ scale(scroll, 0, 500, 1, 0) +')');
       $('.landing-content').css('transform','scale('+ scale(scroll, 0, 600, 1, 0.9) +')');
     })
   })

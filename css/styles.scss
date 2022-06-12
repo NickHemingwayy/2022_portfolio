@@ -122,7 +122,7 @@ p a{
   
 
 header.header-colored{
-    background-color: #262629;
+    background-color: $dark;
     padding-top: 0 !important;
     position: fixed !important;
     animation: headerSlide 0.3s ease-in-out 0.25s 1 forwards;
@@ -416,14 +416,14 @@ header.header-colored{
  // opacity: 0.25;
   span{
     width: 15px;
-    height: 15px;
+    height: 5px;
     position: absolute;
     display: block;
     top: 0;
     right: 0;
     background-color: white;
     transform: translateX(50%);
-    border-radius: 50%;
+    border-radius: 3px;
     transition: 0.5s ease-out;
     &:before{
       content: "Main";
@@ -433,32 +433,38 @@ header.header-colored{
       left: 0;
       transform: translate(100%,-50%);
       color: white;
+      font-size: 1.5em !important;
    
-      
+      font-family: 'Font Awesome 6 Free';
+        font: var(--fa-font-solid);
+        margin-left: 15px;
     }
     &.about{
       &:before{
-        content: "About";
+        content: "\f471";
       }
       top: 25%;
     }
     &.skills{
       &:before{
-        content: "Skills";
+        content: "\f0e7";
+    
       }
       top: 50%;
     }
     &.work{
       &:before{
-        content: "Work";
+        content: "\f126";
+   
       }
       top: 75%;
     }
     &.contact{
       &:before{
-        content: "Contact";
+        content: "\f7c0";
+
       }
-      top: 95%;
+      top: calc(100% - 20px);
     }
   }
 }
