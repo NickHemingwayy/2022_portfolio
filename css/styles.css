@@ -8,11 +8,6 @@
   font-weight: 200;
 }
 
-html,
-body {
-  overscroll-behavior-y: contain;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -411,87 +406,87 @@ header.header-colored {
 }
 
 .shooting-star:nth-child(1) {
-  top: calc(50% - -187px);
-  left: calc(50% - 179px);
-  -webkit-animation-delay: 6979ms;
-          animation-delay: 6979ms;
+  top: calc(50% - -176px);
+  left: calc(50% - 79px);
+  -webkit-animation-delay: 1085ms;
+          animation-delay: 1085ms;
 }
 
 .shooting-star:nth-child(1)::before, .shooting-star:nth-child(1)::after {
-  -webkit-animation-delay: 6979ms;
-          animation-delay: 6979ms;
+  -webkit-animation-delay: 1085ms;
+          animation-delay: 1085ms;
 }
 
 .shooting-star:nth-child(2) {
-  top: calc(50% - -57px);
-  left: calc(50% - 177px);
-  -webkit-animation-delay: 1327ms;
-          animation-delay: 1327ms;
+  top: calc(50% - -92px);
+  left: calc(50% - 57px);
+  -webkit-animation-delay: 8817ms;
+          animation-delay: 8817ms;
 }
 
 .shooting-star:nth-child(2)::before, .shooting-star:nth-child(2)::after {
-  -webkit-animation-delay: 1327ms;
-          animation-delay: 1327ms;
+  -webkit-animation-delay: 8817ms;
+          animation-delay: 8817ms;
 }
 
 .shooting-star:nth-child(3) {
-  top: calc(50% - -86px);
-  left: calc(50% - 209px);
-  -webkit-animation-delay: 3850ms;
-          animation-delay: 3850ms;
+  top: calc(50% - 196px);
+  left: calc(50% - 157px);
+  -webkit-animation-delay: 7673ms;
+          animation-delay: 7673ms;
 }
 
 .shooting-star:nth-child(3)::before, .shooting-star:nth-child(3)::after {
-  -webkit-animation-delay: 3850ms;
-          animation-delay: 3850ms;
+  -webkit-animation-delay: 7673ms;
+          animation-delay: 7673ms;
 }
 
 .shooting-star:nth-child(4) {
-  top: calc(50% - -76px);
-  left: calc(50% - 183px);
-  -webkit-animation-delay: 4186ms;
-          animation-delay: 4186ms;
+  top: calc(50% - 88px);
+  left: calc(50% - 298px);
+  -webkit-animation-delay: 5938ms;
+          animation-delay: 5938ms;
 }
 
 .shooting-star:nth-child(4)::before, .shooting-star:nth-child(4)::after {
-  -webkit-animation-delay: 4186ms;
-          animation-delay: 4186ms;
+  -webkit-animation-delay: 5938ms;
+          animation-delay: 5938ms;
 }
 
 .shooting-star:nth-child(5) {
-  top: calc(50% - -20px);
-  left: calc(50% - 158px);
-  -webkit-animation-delay: 7925ms;
-          animation-delay: 7925ms;
+  top: calc(50% - 163px);
+  left: calc(50% - 295px);
+  -webkit-animation-delay: 7603ms;
+          animation-delay: 7603ms;
 }
 
 .shooting-star:nth-child(5)::before, .shooting-star:nth-child(5)::after {
-  -webkit-animation-delay: 7925ms;
-          animation-delay: 7925ms;
+  -webkit-animation-delay: 7603ms;
+          animation-delay: 7603ms;
 }
 
 .shooting-star:nth-child(6) {
-  top: calc(50% - -166px);
-  left: calc(50% - 106px);
-  -webkit-animation-delay: 7628ms;
-          animation-delay: 7628ms;
+  top: calc(50% - -61px);
+  left: calc(50% - 130px);
+  -webkit-animation-delay: 2386ms;
+          animation-delay: 2386ms;
 }
 
 .shooting-star:nth-child(6)::before, .shooting-star:nth-child(6)::after {
-  -webkit-animation-delay: 7628ms;
-          animation-delay: 7628ms;
+  -webkit-animation-delay: 2386ms;
+          animation-delay: 2386ms;
 }
 
 .shooting-star:nth-child(7) {
-  top: calc(50% - -86px);
-  left: calc(50% - 264px);
-  -webkit-animation-delay: 3069ms;
-          animation-delay: 3069ms;
+  top: calc(50% - 97px);
+  left: calc(50% - 74px);
+  -webkit-animation-delay: 829ms;
+          animation-delay: 829ms;
 }
 
 .shooting-star:nth-child(7)::before, .shooting-star:nth-child(7)::after {
-  -webkit-animation-delay: 3069ms;
-          animation-delay: 3069ms;
+  -webkit-animation-delay: 829ms;
+          animation-delay: 829ms;
 }
 
 @-webkit-keyframes tail {
@@ -756,6 +751,19 @@ header.header-colored {
   content: "\f7c0";
 }
 
+.mobile-status-container {
+  width: 150px;
+  right: 0;
+  top: 0;
+  height: 70px;
+  text-align: end;
+  margin-right: 20px;
+}
+
+.mobile-status-container div span {
+  padding-top: 20px;
+}
+
 @-webkit-keyframes orbit {
   0% {
     left: 0;
@@ -883,6 +891,10 @@ header.header-colored {
 @media only screen and (max-width: 991px) {
   .navbar .nav-item {
     margin-left: 0;
+  }
+  .nav-link {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

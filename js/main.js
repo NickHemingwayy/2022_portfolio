@@ -12,39 +12,37 @@ setInterval(function () {
 var scroll;
 $(document).ready(function() {
   let headerHeight = $('header').height();
- 
 
     $(window).scroll(function() {
+
       scroll  = $(window).scrollTop() ;
       let aboutTop = $('#about').offset().top;
       let skillsTop = $('#skills').offset().top;
       let workTop = $('#work').offset().top;
       let contactTop = $('#contact').offset().top;
-     // let contact = $('#contact').offset().top;
-      console.log(aboutTop);
-     // console.log(scroll, $('body').height()-$(window).height());
-      let scrollWPad = scroll + $(window).height()/1.8 ;
-      if(scrollWPad > aboutTop && scrollWPad < skillsTop){
-        console.log('about in view')
-        $('.scroll-status span').removeClass();
-        $('.scroll-status span').addClass('about');
-        $('.scroll-status').addClass('show');
-      }else if(scrollWPad > skillsTop && scrollWPad < workTop){
-        $('.scroll-status span').removeClass();
-        $('.scroll-status span').addClass('skills');
-        $('.scroll-status').addClass('show');
-      }else if(scrollWPad > workTop && scrollWPad < contactTop ){
-        $('.scroll-status span').removeClass();
-        $('.scroll-status span').addClass('work');
-        $('.scroll-status').addClass('show');
-      }else if( scrollWPad > contactTop ){
-        $('.scroll-status span').removeClass();
-        $('.scroll-status span').addClass('contact');
-        $('.scroll-status').addClass('show');
-      }else{
-        $('.scroll-status').removeClass('show');
-      }
 
+      let scrollWPad = scroll + $(window).height()/1.8 ;
+      if($(window).width()> 991){                              //Handles desktop section status indicator
+        if(scrollWPad > aboutTop && scrollWPad < skillsTop){
+          $('.scroll-status span').removeClass();
+          $('.scroll-status span').addClass('about');
+          $('.scroll-status').addClass('show');
+        }else if(scrollWPad > skillsTop && scrollWPad < workTop){
+          $('.scroll-status span').removeClass();
+          $('.scroll-status span').addClass('skills');
+          $('.scroll-status').addClass('show');
+        }else if(scrollWPad > workTop && scrollWPad < contactTop ){
+          $('.scroll-status span').removeClass();
+          $('.scroll-status span').addClass('work');
+          $('.scroll-status').addClass('show');
+        }else if( scrollWPad > contactTop ){
+          $('.scroll-status span').removeClass();
+          $('.scroll-status span').addClass('contact');
+          $('.scroll-status').addClass('show');
+        }else{
+          $('.scroll-status').removeClass('show');
+        }
+      }
 
       if(scroll> headerHeight + $(window).height()/5){
         
@@ -55,7 +53,7 @@ $(document).ready(function() {
       
 
 
-      //$('.landing-content').css('opacity',scale(scroll, 0, 600, 1, 0) );
+      //Handles intro fade behind mountains
       $('.landing-content').css('filter','brightness('+ scale(scroll, 0, 500, 1, 0) +')');
       $('.landing-content').css('transform','scale('+ scale(scroll, 0, 600, 1, 0.9) +')');
     })

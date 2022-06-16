@@ -10,10 +10,7 @@ $shooting-time: 3000ms;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
 }
-html,
-body {
-    overscroll-behavior-y: contain;
-}
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -468,6 +465,17 @@ header.header-colored{
     }
   }
 }
+.mobile-status-container{
+  width: 150px;
+  right: 0;
+  top: 0;
+  height: 70px;
+  text-align: end;
+  margin-right: 20px;
+  div span{
+    padding-top: 20px;
+  }
+}
 
 
 
@@ -568,5 +576,9 @@ header.header-colored{
 @media only screen and (max-width: 991px) {
 .navbar .nav-item {
   margin-left: 0;
+}
+.nav-link{
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
 }
 }

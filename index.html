@@ -22,15 +22,33 @@
     <body>
         <div id="particles-js"></div>
         <div class="scroll-status"><span class=""></span></div>
+       <!-- <div class="mobile-status-container position-absolute" style="z-index: 400;">
+          <div class="home">
+            <span class="me-2 me-md-0 p text-white d-lg-none d-block sticky-top" id="mobile-scroll-staus">Home <i class="fa-solid fa-earth-americas ms-2"></i></span>
+          </div>
+          <div class="about" >
+            <span class="me-2 me-md-0 p text-white d-lg-none d-block sticky-top" id="mobile-scroll-staus">About <i class="fa-solid fa-earth-americas ms-2"></i></span>
+           </div>
+           <div class="skills"  >
+            <span class="me-2 me-md-0 p text-white d-lg-none d-block sticky-top" id="mobile-scroll-staus">Skills<i class="fa-solid fa-earth-americas ms-2"></i></span>
+           </div>
+           <div class="work" >
+            <span class="me-2 me-md-0 p text-white d-lg-none d-block sticky-top" id="mobile-scroll-staus">Work<i class="fa-solid fa-earth-americas ms-2"></i></span>
+           </div>
+           <div class="contact"  >
+            <span class="me-2 me-md-0 p text-white d-lg-none d-block sticky-top" id="mobile-scroll-staus">Contact<i class="fa-solid fa-earth-americas ms-2"></i></span>
+           </div>
+        </div>-->
         <header class="position-absolute w-100 pt-lg-4 glass" style="z-index: 300;">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
+                <div class="container position-relative">
                   <a class="navbar-brand ps-2 ps-md-0" href="#"><span class="col-change">N</span>EM</a>
-                  <button class="navbar-toggler me-2 me-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler me-2 me-md-0 d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+    
+                  <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+                    <ul class="navbar-nav text-end">
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#about">about</a>
                       </li>
@@ -85,7 +103,7 @@
         </div>
 
         <div class="content">
-          <section class="py-lg-5" style="">
+          <section class="py-lg-5 section about" style="" >
             <a class="anchor" id="about"></a>
             <div class="container py-5">
               <div class="row g-5">
@@ -95,8 +113,8 @@
                 <div class="col-lg-7 d-flex flex-column justify-content-center h-100" data-aos="fade-left" data-aos-offset="200" data-aos-duration="800" style="min-height: 100%;">
                   <h2 class="text-white">Nick + Hem = <span style="color:#BFE0D4; font-weight: 300">"nem"</span></h2>
                   <span class="divide mb-4" ></span>
-                  <p  class="text-white">Hi, my name is Nick Hemingway but by friends thought that was a mouthful so they started calling me “Nem”. I am a 23 year old developer lucky enough to be living in the beautiful city of Kelowna, BC. I graduated university in 2021 and have been working as a developer for <a href="https://www.twincreekmedia.com/" target="_blank">Twin Creek Media</a> ever since. During my time there I have gained plenty experience developing websites/web applications and have been given many opportunities to even spearhead entire projects on my own.</p>
-                    <p class="text-white">Development was a natural fit for me that I sort of came into by accident. Initially I started my university degree wanting to pursue photography and videography but one programming class was all it took to change my mind. Outside of work I enjoy spending my time outside doing activities like camping, hiking and dirtbiking. I am a strong believer in work life balance!</p>
+                  <p  class="text-white">Hi, my name is Nick Hemingway but by friends thought that was a mouthful so they started calling me “Nem”. I am a 23 year old developer lucky enough to be living in the beautiful city of Kelowna, BC. I graduated university in 2021 and have been working as a developer for <a href="https://www.twincreekmedia.com/" target="_blank">Twin Creek Media</a> ever since. During my time there I have gained plenty of experience developing websites/applications and have been given many opportunities to even spearhead entire projects on my own.</p>
+                    <p class="text-white">Development was a natural fit for me that I sort of came into by accident. Initially I started my university degree wanting to pursue photography and videography but one creative programming class was all it took to win me over. Outside of work I enjoy spending my time outside and have fun doing activities like camping, hiking and dirtbiking. I am a strong believer in work life balance!</p>
                     <div>
                       <a href="./resume/Nick_Hemingway_Resume.pdf" download class="btn mt-2">Resume <i class="fa-solid fa-download"></i></a>
                     </div>
@@ -107,7 +125,7 @@
             </div>
           </section>
   
-          <section class="py-5" style="background-color: #4f4f56;  background-image: url(./imgs/bg/skills.bg.jpg); background-size: cover; background-position: center; background-blend-mode: multiply;">
+          <section class="py section skills" style="background-color: #4f4f56;  background-image: url(./imgs/bg/skills.bg.jpg); background-size: cover; background-position: center; background-blend-mode: multiply;">
             <a class="anchor" id="skills"></a>
             <div class="container py-5" >
               <div class="d-flex justify-content-between align-items-center flex-column-reverse flex-md-row">
@@ -222,7 +240,7 @@
   
      
   
-          <section class="pb-lg-5">
+          <section class="pb-lg-5 section work">
             <a class="anchor" id="work"></a>
             <div class="container pb-5">
               <div class="d-flex align-items-center justify-content-between mb-5">
@@ -234,7 +252,7 @@
                  <img src="./imgs/illus/rocket_ship.svg" width="80px" height="auto"  alt="moon orbiting, a display of css3 animation"class="pe-3 pe-md-0">
              </div>
                </div>
-              <div class="row row-cols-1 row-cols-lg-4 g-4 proj-cards">
+              <div class="row row-cols-1 row-cols-lg-2 g-4 proj-cards">
                 <div class="col">
                   <div class="card">
                    
@@ -242,8 +260,10 @@
                       <a href="https://pack4u.com/" target="_blank">
                         <img src="./imgs/projs/pack4u.png" class="card-img-top mb-3" alt="...">
                       </a>
-                      <h5 class="card-title">Pack4U Website</h5>
-                      <p class="card-text">This website was 100% developed by myself and features many custom built animations.</p>
+                      <a href="https://pack4u.com/" target="_blank" class="text-decoration-none">
+                        <h5 class="card-title">Pack4U Website</h5>
+                      </a>
+                      <p class="card-text">This website is a good exaple of my ability to build clean, modern and impactful layouts while including fluid reactivity and animations.</p>
                       <img src="./imgs/illus/skills/adobe-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/bootstrap-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/sass.svg" alt="" width="20px" class="me-2">
@@ -259,8 +279,10 @@
                       <a href="https://www.nationalstorage.ca/" target="_blank">
                         <img src="./imgs/projs/national.png" class="card-img-top mb-3" alt="...">
                       </a>
-                      <h5 class="card-title">National Storage Website</h5>
-                      <p class="card-text">This website was 100% developed by myself and features impressive page speed metrics.</p>
+                      <a href="https://www.nationalstorage.ca/" target="_blank" class="text-decoration-none">
+                        <h5 class="card-title">National Storage Website</h5>
+                      </a>
+                      <p class="card-text">This website is a good example of my ability to develop clean webpages with fast load times without comprising quality.</p>
                       <img src="./imgs/illus/skills/adobe-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/bootstrap-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/sass.svg" alt="" width="20px" class="me-2">
@@ -270,27 +292,39 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card">
+                  <div class="card h-100">
                     
-                    <div class="card-body">
-                      <img src="./imgs/projs/persona.png" class="card-img-top mb-3" alt="...">
-                      <h5 class="card-title">TCM Persona Maker</h5>
-                      <p class="card-text">I built this web app in the 50 hour budget I was given and is a good display of my understanding of single page application building.</p>
-                      <img src="./imgs/illus/skills/vuejs-svgrepo-com.svg" alt="" width="20px" class="me-2">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <div>
+                        <a href="https://youtu.be/SrQMJRQ1AJQ" target="_blank">
+                          <img src="./imgs/projs/persona.png" class="card-img-top mb-3" alt="...">
+                        </a>
+                        <a href="https://youtu.be/SrQMJRQ1AJQ" target="_blank" class="text-decoration-none">
+                          <h5 class="card-title">TCM Persona Maker</h5>
+                        </a>
+                        <p class="card-text">I researched, developed and deployed this application in under 50 hours. This is a good display of my knowledge of single page application building, spearheading projects while producing quality work under pressure.</p>
+                      </div>
+                      <div>
+                        <img src="./imgs/illus/skills/vuejs-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/bootstrap-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/sass.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/firebase-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/modx-svgrepo-com.svg" alt="" width="22px" class="me-2">
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
-                    
                     <div class="card-body">
-                      <img src="./imgs/projs/my_site.PNG" class="card-img-top mb-3" alt="...">
-                      <h5 class="card-title">This website</h5>
-                      <p class="card-text">I needed somewhere to show off my work! So I designed the site in Figma and casually developed it on evenings and weekends.</p>
+                      <a href="https://github.com/NickHemingwayy/2022_portfolio" target="_blank">
+                        <img src="./imgs/projs/my_site.PNG" class="card-img-top mb-3" alt="...">
+                      </a>
+                      <a href="https://github.com/NickHemingwayy/2022_portfolio" target="_blank" class="text-decoration-none">
+                        <h5 class="card-title">This website</h5>
+                      </a>
+                      <p class="card-text ">I needed somewhere to show off my work! So I designed the site in Figma and casually developed it on evenings and weekends. (I love CSS animations)</p>
+                      <p class=""><a href="https://github.com/NickHemingwayy/2022_portfolio">View on GitHub</a></p>
                       <img src="./imgs/illus/skills/figma-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/bootstrap-svgrepo-com.svg" alt="" width="20px" class="me-2">
                       <img src="./imgs/illus/skills/sass.svg" alt="" width="20px" class="me-2">
@@ -304,7 +338,7 @@
   
           </section>
   
-          <section style="background-color: #262629; background-image: url(./imgs/bg/stars.jpg); background-position: center; background-size: cover; background-blend-mode: multiply;" class="py-5 py-md-0">
+          <section class="section contact" style="background-color: #262629; background-image: url(./imgs/bg/stars.jpg); background-position: center; background-size: cover; background-blend-mode: multiply;" class="py-5 py-md-0">
             <a class="anchor" id="contact"></a>
             <div class="container d-flex justify-content-center align-items-center flex-column-reverse flex-md-row contact-container" style="padding-top: 20vh;padding-bottom: 20vh;">
               <div class="mt-4 mt-md-0">
